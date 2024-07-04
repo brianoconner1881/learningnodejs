@@ -1,0 +1,45 @@
+body{
+    background-color: beige;
+    
+}
+
+.container{
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 35%;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 1px solid #b8dd84;
+    padding: 10px;
+    background-color: rgb(181, 177, 177);
+   
+}
+.error{
+    visibility: hidden;
+    color: red;
+    font-size: 85%;
+}
+input{
+    width:100%
+}
+h1{
+    text-align: center;
+}
+#button1{
+left: 50%;
+    text-align: center;
+    
+    display: block;
+    margin: 0 auto;
+    
+    
+    
+}
+button{
+    width: 75%;
+    background-color: rgb(235, 199, 132);
+}

@@ -5,57 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="regcss.css">
 </head>
 <body>
     
-    <form method="post">
+    <form method="post" action="">
+        <div class="container">
+            <h1>Register Form</h1>
+            <br>
+            <p>Please fill the details to create an account with us</p>
+            <hr>
         <label for="name">Name:</label>
-        <input type="text" placeholder="enter name" id="name">
+        <br>
+        <input type="text" placeholder="enter name" id="name" onchange="changeHiddenToVisible()" required>
+        <div class="error" id="nameErr">Name cannot be empty</div>
      <br>
       <label for="email">Email:</label>
-      <input type="text" placeholder="Enter email" id="email">
-        <br><label for="password">password:</label>
-        <input type="password" placeholder="password" id="password">
+      <br>
+      <input type="text" placeholder="Enter email" id="email" required>
+      <div class="error" id="emailErr">Email cannot be empty</div>
+
+        <br>
+        <label for="password">password:</label>
+        <br>
+        <input type="password" placeholder="password" id="password"  required>
+        <div class="error" id="passswordErr">password cannot be empty</div>
         <br>
         <label for="confirmPassword">Confirm password:</label>
-        <input type="password" placeholder="confirm password" id="confirmPassword">
         <br>
-        <a href="login_page.html"><input type="button" onclick="validateform()"value="submit" id="submit"> </a>
+        <input type="password" placeholder="confirm password" id="confirmPassword" required>
+        <br>
+        <div class="error" id="confirmpasswordErr">please enter a valid passsword</div>
+        <br>
+        <div id="button1">
+        <button onclick="validateForm()" value="Submit">Submit</button>
+    </div>
+    </div>
     </form>
-<script>
-        function validateform(){
-            debugger
-            event.preventDefault();
-            
-        let name= document.getElementById("name").value;
-        if( document.getElementById("name").value=="") {
-            
-            alert("no name");
-             
-    }
-    else if(document.getElementById("email").value == "")
-    {
-        alert("please enter your email");
-    }
-    else if(document.getElementById('password').value=='')
-    {
-        alert("please enter a password");  
-    }
-    else if(document.getElementById('password').value != document.getElementById('confirmPassword').value)
-    {
-        debugger
-        alert("passwords do not match");
-    }
-    
-    else{
-       alert("form submitted successfully");
-       location.href="./login_page";
-       
-    }
-    
-        
-}
-
-    </script>
+<script src="html_regjs.js"></script>
 </body>
 </html>
