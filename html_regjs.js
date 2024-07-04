@@ -49,7 +49,7 @@
     
     else{
        alert("form submitted successfully");
-       window.location.href="login_page.html";
+       window.location.href="./login_page.html";
        
     }
     
