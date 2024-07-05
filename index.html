@@ -22,18 +22,18 @@
      <br>
       <label for="email">Email:</label>
       <br>
-      <input type="text" placeholder="Enter email" id="email" required>
+      <input type="text" placeholder="Enter email" id="email" onchange="changeHiddenToVisible()" required>
       <div class="error" id="emailErr">Email cannot be empty</div>
 
         <br>
         <label for="password">password:</label>
         <br>
-        <input type="password" placeholder="password" id="password"  required>
+        <input type="password" placeholder="password" id="password" onkeydown="changeHiddenToVisible()" required>
         <div class="error" id="passswordErr">password cannot be empty</div>
         <br>
         <label for="confirmPassword">Confirm password:</label>
         <br>
-        <input type="password" placeholder="confirm password" id="confirmPassword" required>
+        <input type="password" placeholder="confirm password" id="confirmPassword" onkeydown="changeHiddenToVisible()" required>
         <br>
         <div class="error" id="confirmpasswordErr">please enter a valid passsword</div>
         <br>
