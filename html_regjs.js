@@ -1,15 +1,16 @@
+
  function validateForm(){
-            
+  debugger
             event.preventDefault();
-            
+              
         let name= document.getElementById("name").value.trim();
         let email= document.getElementById("email").value.trim();
         let password= document.getElementById("password").value.trim();
        let confirmPassword =document.getElementById("confirmPassword").value;
        let regexp = /\S+@\S+\.\S+/;
        let regex =  /^[A-Za-z]\w{7,14}$/;
-      
-       debugger
+      debugger
+     
         if( document.getElementById("name").value=="") {
             
             document.getElementById("nameErr").style.visibility = "visible";
@@ -58,7 +59,7 @@
         
 }
 function changeHiddenToVisible(){
-    debugger
+  
     let name= document.getElementById("name").value.trim();
     let email= document.getElementById("email").value.trim();
     let password= document.getElementById("password").value.trim();
